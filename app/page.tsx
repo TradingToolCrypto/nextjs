@@ -1,8 +1,20 @@
 import Image from "next/image";
+import { Roboto } from "next/font/google";
+import { Permanent_Marker } from "next/font/google";
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ['500']
+});
+
+const permanent = Permanent_Marker({
+  subsets: ["latin"],
+  weight: ['400']
+});
+//  <main className="w-full h-screen !bg-cover">
 export default function Home() {
   return (
-    <main className="w-full h-screen !bg-cover">
+    <main className={roboto.className}>
 
       <div
         className={`fixed top-0 left-0 flex w-full h-14 justify-between items-center gap-4  bg-opacity-80 backdrop-filter backdrop-blur-sm transition-all duration-300 z-10 bg-gray-dark-3`}
@@ -70,7 +82,8 @@ export default function Home() {
         >
           <p className="text-[33px] md:text-[50px]">Level Up with</p>
           <p className="text-[33px] md:text-[50px] text-primary-default font-Permanent">
-            Metatrader 5
+            <span className={permanent.className}> Metatrader 5 </span>
+           
           </p>
           <p className="text-[33px] md:text-[50px]">and get Alpha</p>
           <div className="text-[18px] md:w-[477px] mt-3">
@@ -129,8 +142,11 @@ export default function Home() {
         />
         <div className="flex flex-col justify-end w-[90%] md:w-[684px] h-[260px]">
           <p className="text-[36px] font-bold mb-6">
-            Chart and Backtest Anything
+            Chart and backtest  <span className={permanent.className}>
+              <span className="text-primary-default"> anything </span>
+               </span>
           </p>
+        
           <div className="text-[18px] md:w-[530px]">
             <p className="mb-3 md:mb-0">
               Combine the power of MT5 with 20+ of the most popular crypto
@@ -141,15 +157,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:mt-12">
-            {/* <PrimaryButton type={ButtonStatus.active} className="flex w-[213px] md:w-[196px] h-[48px] items-center justify-center" onClick={() => dispatch(toggleWalletPanel(true))}>
-                        Launch Creator studio
-                    </PrimaryButton>
-
-                    <button
-                        className="w-[213px] md:w-[196px] h-[48px] justify-center items-center text-[#9264F8] font-medium active:bg-gray-light-1 rounded-full"
-                    >
-                        Learn more about cNFTs
-                    </button> */}
+           
           </div>
         </div>
       </div>
@@ -168,22 +176,20 @@ export default function Home() {
           className="flex flex-col justify-center w-[90%] md:w-[684px] xl:w-[550px] h-[460px]"
         >
           <p className="text-[36px] font-bold mb-6">
-            Connect directly to CEX and DEX with unlimited api connectivity
+            Connect directly to CEX and DEX with  <span className={permanent.className}>
+              <span className="text-primary-default"> unlimited </span>
+               </span> api connectivity
           </p>
           <p className="text-[18px] m:w-[530px]">
-            -- Trade EVERYTHING without any 3rd party slowing you down.{' '}
-            <br className="hidden md:block" /> -- Proprietary algorithms for easy
-            TA.
-            <br className="hidden md:block" /> -- Order books, Open Interest,
-            <br className="hidden md:block" /> -- Manual, sem-auto, and robots
+            -- Trade without any 3rd party slowing you down.{' '}
+            <br className="hidden md:block" /> -- Order books, Open Interest, and historical data.
+            <br className="hidden md:block" /> -- Manual, sem-auto, and robot.
             ready.
             <br className="hidden md:block" /> -- Multi-charts, indicators, and
             custom timeframes.
           </p>
           <div className="flex items-center gap-4 mt-12">
-            {/* <PrimaryButton type={ButtonStatus.active} className="flex w-[191px] h-[48px] items-center justify-center" onClick={() => { }}>
-                        See documentation
-                    </PrimaryButton> */}
+          
           </div>
         </div>
       </div>
@@ -203,7 +209,7 @@ export default function Home() {
           className="flex flex-col justify-end w-[90%] md:w-[684px] h-[260px]"
         >
           <p className="text-[36px] font-bold mb-6">
-            Get Exclusive Access with Elite
+            Get Exclusive Access with  <span className={permanent.className}> Elite </span>
           </p>
           <div className="text-[18px] md:w-[530px]">
             <p className="mb-3 md:mb-0">
@@ -211,23 +217,15 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:mt-12">
-            {/* <PrimaryButton type={ButtonStatus.active} className="flex w-[213px] md:w-[196px] h-[48px] items-center justify-center" onClick={() => dispatch(toggleWalletPanel(true))}>
-                        Launch Creator studio
-                    </PrimaryButton>
-
-                    <button
-                        className="w-[213px] md:w-[196px] h-[48px] justify-center items-center text-[#9264F8] font-medium active:bg-gray-light-1 rounded-full"
-                    >
-                        Learn more about cNFTs
-                    </button> */}
+          
           </div>
         </div>
       </div>
 
       {/** Sign Up  */}
 
-      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px]  p-10">
-        <div className="flex flex-col w-full md:w-[550px] justify-center items-center xl:w-full h-[750px] md:h-[460px] pb-24">
+      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px]  p-2">
+        <div className="flex flex-col w-full md:w-[550px] justify-center items-center xl:w-full h-[750px] md:h-[460px] pb-5">
           <p className="text-[56px] font-bold text-center p-2">
             No Registration required.
           </p>
@@ -313,18 +311,18 @@ export default function Home() {
           height={193}
           alt="addInfoToImage"
         />
-        <div className="flex flex-col w-full md:w-[550px] justify-center items-center xl:w-full h-[750px] md:h-[460px] pb-24">
+        <div className="flex flex-col w-full md:w-[550px] justify-center items-center xl:w-full h-[750px] md:h-[460px] pb-5">
           <p className="text-[36px] font-bold text-center p-20">
             <ul>
               <li>
                 {' '}
                 Activate{' '}
                 <span className="font-normal font-Permanent text-secondary-default">
-                  Pro
+                <span className={permanent.className}> Pro </span>
                 </span>{' '}
                 or{' '}
                 <span className="font-normal font-Permanent text-primary-default">
-                  Elite
+                <span className={permanent.className}> Elite </span>
                 </span>{' '}
               </li>
               <li className="text-[26px]">Download historical data</li>
@@ -336,11 +334,11 @@ export default function Home() {
               <li>
                 Go{' '}
                 <span className="font-normal font-Permanent text-secondary-default">
-                  Elite
+                <span className={permanent.className}> Elite </span>
                 </span>{' '}
                 and{' '}
                 <span className="font-normal font-Permanent text-primary-default">
-                  Unlock
+                <span className={permanent.className}> Unlock </span>
                 </span>{' '}
               </li>
               <li className="text-[26px]">Proprietary Algos,</li>
@@ -353,7 +351,7 @@ export default function Home() {
 
       {/** Footer  */}
 
-      <div className="flex justify-center w-full bg-primary-footer pt-6 pb-5 h-[607px] sm:h-[372px]">
+      <div className="flex justify-center w-full  pt-6 pb-5 h-[607px] sm:h-[372px]">
         <div className="flex justify-between w-[90%] xl:w-[1280px] relative">
           <Image
             src="/footer/tr.svg"
@@ -408,7 +406,7 @@ export default function Home() {
 
                 <button
 
-                  className="flex w-[191px] h-[48px] items-center justify-center"
+                  className="flex w-[191px] h-[48px] items-center justify-center bg-primary-default rounded-[40px] w-[242px] md:w-[196px] h-[48px]"
 
                 >
                   <a

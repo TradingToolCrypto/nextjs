@@ -10,26 +10,7 @@ const config: Config = {
   ],
 
   theme: {
-    colors: {
-      'primary-light': '#9C6EEB',
-      'primary-default': '#12bff8',
-      'primary-dark': '#7446DA',
-      'primary-dark-1': '#B882FF',
-      'primary-footer': '#2B2240',
-      'secondary-cyan': '00eefd',
-      white: '#ffffff',
-      'gray-light-1': '#cccccc',
-      'gray-light-2': '#aaaaaa',
-      'gray-light-3': '#666666',
-      'gray-dark-1': '#404040',
-      'gray-dark-2': '#222222',
-      'gray-dark-3': '#121212',
-      'gray-dark-4': '#1C1C1C',
-      'gray-dark-5': '#D9D9D9',
-      black: '#000000',
-      'white-10': '#ffffff2f',
-    },
-
+  
     extend: {
       fontFamily: {
         Inter: ['Inter', 'sans-serif'],
