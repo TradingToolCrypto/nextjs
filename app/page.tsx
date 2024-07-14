@@ -183,10 +183,8 @@ export default function Home() {
           <p className="text-[18px] m:w-[530px]">
             -- Trade without any 3rd party slowing you down.{' '}
             <br className="hidden md:block" /> -- Order books, Open Interest, and historical data.
-            <br className="hidden md:block" /> -- Manual, sem-auto, and robot.
-            ready.
-            <br className="hidden md:block" /> -- Multi-charts, indicators, and
-            custom timeframes.
+            <br className="hidden md:block" /> -- Manual, sem-auto, and robot ready.
+            <br className="hidden md:block" /> -- Multi-charts, indicators, and custom timeframes.
           </p>
           <div className="flex items-center gap-4 mt-12">
           
