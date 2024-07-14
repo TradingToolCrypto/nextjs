@@ -418,7 +418,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[16px] font-normal">
-              Copyright © {new Date().getFullYear()}. All rights reserved.
+              Copyright © 2020 - {new Date().getFullYear()}. All rights reserved.
             </p>
           </div>
           <div className=" hidden sm:block z-20">
