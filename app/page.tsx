@@ -68,7 +68,7 @@ export default function Home() {
 
 
       {/** Download  */}
-      <div className="flex flex-col items-center xl:flex-row justify-between w-[360px] md:w-[1280px] relative mt-9 md:mt-[67px]">
+      <div className="flex flex-col items-center xl:flex-row justify-between w-[360px] md:w-[1280px] relative mt-9 md:mt-[67px] p-20">
         <Image
           src="/K.png"
           className="w-full md:w-[684px] md:h-[581px] xl:absolute -right-32"
@@ -132,7 +132,7 @@ export default function Home() {
 
       {/** backtest */}
 
-      <div className="flex flex-col xl:flex-row justify-between items-center w-[360px] md:w-[1280px] relative my-[120px] md:mt-[241px] md:mb-[321px] bg-gray-dark-3">
+      <div className="flex flex-col xl:flex-row justify-between items-center w-[360px] md:w-[1280px] relative my-[120px] md:mt-[241px] md:mb-[321px] bg-gray-dark-3 p-20">
         <Image
           src="/charts.png"
           className="w-full md:w-[471px] md:h-[415px] xl:absolute right-0"
@@ -194,7 +194,7 @@ export default function Home() {
 
       {/** Elite  */}
 
-      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px] bg-gray-dark-3">
+      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px] bg-gray-dark-3 p-20">
         <Image
           src="/elite.png"
           className="w-full md:w-[471px] md:h-[415px] xl:absolute right-0"
@@ -222,7 +222,7 @@ export default function Home() {
 
       {/** Sign Up  */}
 
-      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px]  p-2">
+      <div className="flex flex-col xl:flex-row items-center justify-between w-[360px] md:w-[1280px] relative mb-[80px] md:mb-[297px]  p-20">
         <div className="flex flex-col w-full md:w-[550px] justify-center items-center xl:w-full h-[750px] md:h-[460px] pb-5">
           <p className="text-[56px] font-bold text-center p-2">
             No Registration required.
@@ -266,7 +266,7 @@ export default function Home() {
       </div>
 
       {/** Sell it  */}
-      <div className="flex justify-center w-full xl:w-[1280px] relative mb-[171px] bg-gray-dark-3">
+      <div className="flex justify-center w-full xl:w-[1280px] relative mb-[171px] bg-gray-dark-3 p-20">
         <Image
           src="/last/tl.png"
           className="hidden xl:block w-[246px] h-[208px] absolute left-0 top-0"
